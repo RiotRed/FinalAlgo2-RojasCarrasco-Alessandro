@@ -22,7 +22,7 @@ public class ControladorTrabajador {
             public void actionPerformed(ActionEvent e) {
                 frmIngreso fIngreso = new frmIngreso();
                 ControladorPrincipal controlador;
-                controlador = new ControladorPrincipal(configuracion.Datos.usuarios, fIngreso);
+                controlador = new ControladorPrincipal();
                 controlador.iniciar();
                 
                 vista.dispose();

@@ -39,8 +39,6 @@ public class Trabajador extends Persona {
     public Trabajador ingresar(String email, String password){
         Trabajador u = null;
         
-        
-        
         return u;
     }
     

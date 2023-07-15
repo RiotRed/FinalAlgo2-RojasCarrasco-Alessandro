@@ -25,8 +25,8 @@ public class ControladorPrincipal {
             
             if(u!=null){
                 frmTrabajador vistaT = new frmTrabajador();
-                ControladorTrabajador controladorRegular = new ControladorTrabajador(u, vistaT);
-                ControladorTrabajador.();
+                ControladorTrabajador controladorTrabajador = new ControladorTrabajador(u, vistaT);
+                controladorTrabajador.iniciar();
                 vista.dispose();
             }else{
                  JOptionPane.showMessageDialog( vista, "Credenciales invalidas" );
@@ -38,12 +38,17 @@ public class ControladorPrincipal {
             
         });
         
-       public void iniciar(){
-           this.vista.setLocationRelativeTo(null);
-           this.vista.setVisible(true);
+       
        }
+
+    ControladorPrincipal() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
         
-        
+    public void iniciar(){
+        this.vista.setLocationRelativeTo(null);
+        this.vista.setVisible(true); 
+    }
     } 
     
-}
+
