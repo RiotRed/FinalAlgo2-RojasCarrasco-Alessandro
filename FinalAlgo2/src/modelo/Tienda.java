@@ -33,4 +33,7 @@ public class Tienda {
         
     }
     
+    public void agregarProducto(Producto p){
+        
+    }
 }

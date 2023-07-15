@@ -22,6 +22,17 @@ public class Categoria {
         this.disponible = disponible;
     }
     
+    public boolean habilitar(){
+        boolean habilitar = false;
+       
+        return habilitar;
+    }
+    
+    public boolean deshabilitar(){
+        boolean deshabilitar = false;
+        
+        return deshabilitar;
+    }
     
     
 }
