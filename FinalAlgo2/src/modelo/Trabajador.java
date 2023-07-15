@@ -30,6 +30,12 @@ public class Trabajador extends Persona {
         this.password = password;
     }
 
+    @Override
+    public String getNumDocumento() {
+        return super.getNumDocumento(); 
+    }   
+    
+    
     public boolean ingresar(String email, String password){
         boolean ingresar = false;
         

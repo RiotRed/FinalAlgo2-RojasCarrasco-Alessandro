@@ -27,11 +27,11 @@ public class Venta {
         return estado;
     }
     
-    public void agregarProducto(Producto p){
+    public void agregarProducto(Producto p, int cantidad){
         
     }
     
-    public void eliminarProducto(Producto p, int cantidad){
+    public void eliminarProducto(Producto p){
         
     }
     
