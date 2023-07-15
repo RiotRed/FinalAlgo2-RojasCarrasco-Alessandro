@@ -11,7 +11,6 @@ public class Detalle {
     public Detalle(int cantidad, float precio, float descuento, float total) {
         this.cantidad = cantidad;
         this.precio = precio;
-        this.descuento = descuento;
         this.total = total;
     }
 
@@ -21,10 +20,6 @@ public class Detalle {
 
     public float getPrecio() {
         return precio;
-    }
-
-    public float getDescuento() {
-        return descuento;
     }
 
     public float getTotal() {
@@ -37,10 +32,6 @@ public class Detalle {
 
     public void setPrecio(float precio) {
         this.precio = precio;
-    }
-
-    public void setDescuento(float descuento) {
-        this.descuento = descuento;
     }
     
     

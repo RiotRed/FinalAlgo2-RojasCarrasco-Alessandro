@@ -1,6 +1,9 @@
 
 package modelo;
 
+import modelo.Producto;
+import modelo.Cliente;
+import modelo.Categoria;
 
 public class Tienda {
     private String nombre;

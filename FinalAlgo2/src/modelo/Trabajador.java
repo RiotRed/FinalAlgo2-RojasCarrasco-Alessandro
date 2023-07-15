@@ -31,18 +31,19 @@ public class Trabajador extends Persona {
     }
 
     @Override
-    public String getNumDocumento() {
-        return super.getNumDocumento(); 
-    }   
+    public String toString() {
+        return "Trabajador{" + "password=" + password + ", email=" + email + '}';
+    } 
     
     
-    public boolean ingresar(String email, String password){
-        boolean ingresar = false;
+    public Trabajador ingresar(String email, String password){
+        Trabajador u = null;
         
         
         
-        return ingresar;
+        return u;
     }
+    
     
     public boolean salir(){
         boolean salir = false; 

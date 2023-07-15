@@ -7,6 +7,7 @@ import modelo.Trabajador;
 import modelo.Cliente;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import javax.swing.JOptionPane;
 import vista.frmTrabajador;
 
 public class ControladorPrincipal {
@@ -23,10 +24,12 @@ public class ControladorPrincipal {
                 Trabajador u = modelo.ingresar(vista.txtEmail.getText(),vista.txtClave.getText());
             
             if(u!=null){
-                frmTrabajador vista = new frmTrabajador();
-                ControladorTrabajador controladorRegular = new ControladorTrabajador(u, vistaR);
-                controladorTrabajador.ingresar();
+                frmTrabajador vistaT = new frmTrabajador();
+                ControladorTrabajador controladorRegular = new ControladorTrabajador(u, vistaT);
+                ControladorTrabajador.();
                 vista.dispose();
+            }else{
+                 JOptionPane.showMessageDialog( vista, "Credenciales invalidas" );
             }
             
             }
@@ -34,6 +37,13 @@ public class ControladorPrincipal {
             
             
         });
+        
+       public void iniciar(){
+           this.vista.setLocationRelativeTo(null);
+           this.vista.setVisible(true);
+       }
+        
+        
     } 
     
 }
